@@ -202,16 +202,6 @@ LIMIT 10
 
 Query 9: The following query is trying to calculate the CDGR on May 10, 2020(Cumulative Daily Growth Rate) for France since the day the first case was reported. The first case was reported on Jan 24, 2020. The CDGR is calculated as:
 
-((last_day_cases/first_day_cases)^1/days_diff)-1)
-
-Where :
-last_day_cases is the number of confirmed cases on May 10, 2020
-first_day_cases is the number of confirmed cases on Feb 02, 2020
-days_diff is the number of days between Feb 02 - May 10, 2020
-
-The query isn’t executing properly as it contains an error. Can you fix the error to make the query execute successfully?
-
-
 
 WITH
   france_cases AS (

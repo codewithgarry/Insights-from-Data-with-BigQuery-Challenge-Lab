@@ -1,8 +1,16 @@
+Subscribe the Prakash foundation:-\
+
+
+Query 1: Total Confirmed Cases###################################
+
 Query 1: Build a query that will answer - What was the total count of confirmed cases on Apr 15, 2020? The query needs to return a single row containing the sum of confirmed cases across all countries. The name of the column should be total_cases_worldwide.
 
 SELECT sum(cumulative_confirmed) as total_cases_worldwide FROM `bigquery-public-data.covid19_open_data.covid19_open_data` where date='2020-04-15'
 
 
+
+
+Query 2: Worst Affected Areas#####################################
 Query 2: Build a query for answering - How many states in the US had more than 100 deaths on Apr 10, 2020? The query needs to list the output in the field - count_of_states.
 
 
@@ -18,6 +26,10 @@ from deaths_by_states
 where death_count > 100
 
 
+
+
+
+Query 3: Identifying Hotspots#################################################3333
 Query 3: Build a query that will answer - List all the states in the United States of America that had more than 1000 confirmed cases on Apr 10, 2020? The query needs to return the State Name and the corresponding confirmed cases arranged in descending order. Name of the fields to return - state and total_confirmed_cases.
 
 SELECT * FROM (
@@ -36,6 +48,12 @@ Has a having clause on total_confirmed_cases > 1000
 Has a order by clause on total_confirmed_cases and mentions desc
 
 
+
+
+
+
+
+Query 4: Fatality Ratio##########################################################
 Query 4: Build a query for answering - What was the case-fatality ratio in Italy for the month of April 2020? Case-fatality ratio here is defined as (total deaths / total confirmed cases) * 100. Write a query to return the ratio for the month of April 2020 and containing the following fields in the output - total_confirmed_cases, total_deaths, case_fatality_ratio.
 
 
@@ -48,6 +66,17 @@ AT - Verify the structure of the query and if it contains:
 Fields contain total_confirmed_cases, total_deaths, case_fatality_ratio
 country_region=’Italy’ and date=’2020-04-30’
 
+
+
+
+
+
+
+
+
+
+
+
 Query 5: Build a query for answering - On what day did the total number of deaths cross 10000 in Italy? The query should return the date in the format : yyyy-mm-dd.
 
 SELECT date
@@ -55,6 +84,14 @@ FROM `bigquery-public-data.covid19_open_data.covid19_open_data`
 where country_name="Italy" and cumulative_deceased>10000
 order by date asc
 limit 1
+
+
+
+
+
+
+
+
 
 
 Query 6: The following query is written to identify the number of days in India between 21 Feb 2020 and 15 March 2020 when there were zero increases in the number of confirmed cases. However it is not executing properly. You need to update the query to complete it and obtain the result.
@@ -86,6 +123,10 @@ FROM india_cases_by_date
 select count(*)
 from india_previous_day_comparison
 where net_new_cases=0
+
+
+
+
 
 
 
@@ -124,7 +165,17 @@ from us_previous_day_comparison
 where percentage_increase > 10
 
 
+
+
+
+
+
+
+
 Query 8:
+
+
+
 
 WITH cases_by_country AS (
   SELECT
@@ -151,6 +202,14 @@ FROM recovered_rate
 WHERE cases > 50000
 ORDER BY recovery_rate desc
 LIMIT 10
+
+
+
+
+
+
+
+
 
 
 
@@ -212,3 +271,11 @@ WHERE
   AND '2020-04-30'
   AND country_name ="United States of America"
 GROUP BY date
+
+
+
+
+
+ THe Prakash Foundation 
+
+Subsbribe now

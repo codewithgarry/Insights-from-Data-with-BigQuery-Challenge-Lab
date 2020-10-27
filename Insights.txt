@@ -40,15 +40,6 @@ GROUP BY subregion1_name
 ORDER BY total_confirmed_cases DESC ) WHERE total_confirmed_cases > 1000
 
 
-AT - Verify the structure of the query and if it contains:
-Fields as state and total_confirmed_cases
-country_region=US and date=’2020-04-10’
-Has a group by province_state
-Has a having clause on total_confirmed_cases > 1000
-Has a order by clause on total_confirmed_cases and mentions desc
-
-
-
 
 
 

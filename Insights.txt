@@ -53,10 +53,6 @@ FROM `bigquery-public-data.covid19_open_data.covid19_open_data`
 where country_name="Italy" AND date BETWEEN '2020-04-01'and '2020-04-30'
 
 
-AT - Verify the structure of the query and if it contains:
-Fields contain total_confirmed_cases, total_deaths, case_fatality_ratio
-country_region=’Italy’ and date=’2020-04-30’
-
 
 
 
